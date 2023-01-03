@@ -1,0 +1,241 @@
+// Option A: Include all of Bootstrap
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400;1,600&display=swap');
+
+$font-family-sans-serif: 'poppins', system-ui !important;
+
+// Include any default variable overrides here (though functions won't be available)
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Custom code here
+
+
+nav{
+
+    .nav-item{
+        cursor: pointer;
+    }
+
+    .custom-dropdown{
+        position: relative;
+
+        ul{
+            display: none;
+            position: absolute;
+            min-width: 100px;
+            z-index: 111;
+            background-color: white;
+            box-shadow: 0 2px 5px -2px rgb(0, 0, 0, 20);
+            padding: 1rem;
+            border-radius: 0.2rem;
+        }
+
+        &:hover ul{
+            display: block;
+        }
+    }
+
+    .navbar-brand{
+        img{
+            width: 100px;
+        }
+    }
+
+    .li-bar{
+        width: 2px;
+        height: 20px;
+        background-color: #999999;
+    }
+
+    .nav-icon{
+        font-size: 1.2rem;
+        color: rgb(0, 0, 0, 0.55);
+    }
+}
+
+.feature{
+    height: auto;
+    background-color: #111111;
+
+    h1{
+        font-size: 4rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+    }
+
+    p{
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .btn{
+        margin: 1rem;
+        border-radius: 0.5rem;
+        background-color: white;
+    }
+
+    .btn1, .btn2{
+        width: 150px;
+        height: 50px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .btn:hover{
+        background-color: #999999;
+        color: white;
+    }
+}
+
+.main-section{
+    height: auto;
+
+    h1{
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .sec-card{
+        background-color: #def2ff;
+        margin-left: auto;
+        border-radius: 1rem;
+        padding: 1rem;
+
+        span{
+            font-size: 2rem;
+        }
+
+        h4{
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+    }
+}
+
+
+.analytics{
+    display: flex;
+
+    img{
+        width: 500px;
+    }
+
+    h3{
+        font-size: 3rem;
+        font-weight: bold;
+
+        span{
+            color: orange;
+        }
+    }
+
+    p{
+        span{
+            font-size: 1rem;
+        }
+    }
+}
+
+.exp-section{
+    background-color: #def2ff;
+    height: auto;
+
+
+    h1{
+        font-size: 1.5rem;
+        font-weight: bold;
+
+        span{
+            color: orange;
+        }
+    }
+}
+
+.highlight{
+
+    .blog-head{
+        display: flex;
+
+        .btn{
+            margin-left: auto;
+        }
+    }
+
+    .card-body{
+
+        .card{
+
+            img:hover{
+                
+            }
+        }
+
+        .btn{
+            color: white;
+            box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
+
+            &:hover{
+                box-shadow: 0 2px 5px 0 rgba(0,0,0, 10);
+            }
+        }
+
+        .btn1{
+            background-color: #452E1A;
+        }
+
+        .btn2{
+            background-color: #97C7C7;
+        }
+
+        .btn3{
+            background-color: #0E1736;
+        }
+    }
+
+    
+}
+
+footer{
+    background-color: #000000;
+
+    h5{
+        color: #999999;
+        font-weight: 600;
+    }
+
+    a{
+        display: flex;
+        text-decoration: none;
+        font-size: 1rem;
+        color: #666666;
+        font-weight: 600;
+    }
+
+    p{
+        color: #666;
+    }
+
+    .btn{
+        background-color: #666;
+        border-radius: 0.2rem;
+    }
+
+    .copyright{
+        text-align: center;
+    }
+
+    .social-icons{
+        color: white;
+        
+        span{
+            margin-right: 0.5rem;
+
+            &:hover{
+                color: lightblue;
+            }
+        }
+    }
+
+}
